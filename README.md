@@ -26,10 +26,10 @@ Much of the community is focused on **kops**(https://github.com/kubernetes/kops)
 ## The future of this repo
 Sad to say, once I firm up the scripts I probably won't update the scripts anymore. It works OOTB for kubernetes v1.6. That being said, I believe it will work out of the box for many kubernetes versions to come. We shall see!
 
-## Why _almost_?
+## Why is this _almost production-grade_?
 In this setup, it is assumed that `kube-apiserver` is load-balanced by DNS round-robin. This is not a robust solution. Instead, a HTTP load-balancer (eg. nginx) pod should be installed on each worker node that load-balances between the controller nodes. kargo does this.
 
-I will try to scrape some time to work on this, but feel free to PR on the code if you work it out!
+I will try to scrape out some time to work on this, but feel free to PR on the code if you work it out!
 
 
 # CoreOS Container Linux Installation Guide
